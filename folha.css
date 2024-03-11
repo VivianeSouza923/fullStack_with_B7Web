@@ -1,0 +1,12 @@
+
+body {
+    background-color:brown; 
+    /* Outras propriedades CSS podem ser adicionadas conforme necessário */
+    color: #fff; /* Cor do texto para melhor contraste */
+    margin: 0; /* Remove a margem padrão para garantir que a cor de fundo cubra toda a página */
+    font-size: 25;
+    font-weight: 500;
+    font-style: italic;
+   
+    
+}
