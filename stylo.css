@@ -3,6 +3,14 @@ h1 {
     font-size: 50px;
 }
 
+#Jesus {
+    color: cadetblue;
+}
+
+.A{
+    color: chartreuse;
+}
+
 a{
     color:brown;
     font-size: 20px;
@@ -19,4 +27,12 @@ li{
     font-weight: bold;
     color:burlywood;
     
+}
+
+#B, .C{
+    color: chocolate;
+}
+
+ol li{
+    color: coral;
 }
