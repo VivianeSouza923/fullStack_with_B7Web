@@ -1,0 +1,14 @@
+.exemplo{
+    /*border: 4px dashed darkgoldenrod;*/
+    background-color: darkgray;
+    /*padding: 6px;
+    margin: 10px;*/
+    height: 90px;
+    width: 80%;
+}
+
+img {
+
+    /*width: 100%;*/
+    width: auto;
+}

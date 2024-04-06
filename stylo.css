@@ -21,6 +21,8 @@ a{
 
 img{
     width: 300px;
+    border: 6px dotted darkcyan;
+    border-radius: 8px;
 }
 
 
@@ -38,4 +40,19 @@ li{
 
 ol li{
     color: coral;
+}
+
+p{
+    /*border-right: 7px outset #6495ed;*/
+    background-color: crimson;
+    border-radius: 5px;
+    
+}
+
+div {
+    background-color: cyan;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 9px solid darkblue;
 }
