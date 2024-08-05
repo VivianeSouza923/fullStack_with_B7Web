@@ -1,0 +1,10 @@
+h1{
+    color: darkgoldenrod;
+    border-width: 5px;
+    border-style: outset;
+    border-color: darkgreen;
+}
+
+body{
+    background-color: darkgray;
+}
