@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+}
+
+.Coluna-esquerda{
+    float: left;
+    width: 200px;
+    background-color: darkorchid;
+
+}
+
+.coluna-direita{
+
+    float: left;
+    width: calc(50% - 100px);
+    background-color: darkred;
+
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
