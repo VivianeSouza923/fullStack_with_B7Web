@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Aula B7Web</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="tags_fieldset_legend.css">
+    </head>
+
+    <body>
+
+        <form method="post" action="bla.php">
+           <fieldset>
+            <legend>Dados Pessoais: </legend>
+            <label>
+                Primeiro nome: <br>
+                <input type="text" name="name" required minlength="2" maxlength="6"/>
+            </label>
+            <br>
+            <label>
+                Sobrenome: <br>
+                <input type="text" name="lastname">
+            </label>
+            <br>
+            <label>
+                Idade: <br>
+                <input type="number" name="age" min="18" max="120">
+            </label>
+            <br>
+            <label>
+                Data de Nascimento: <br>
+                <input type="date" name="birthdate" min="2024-08-27"/>
+            </label>
+            <br>
+           </fieldset>
+            <fieldset>
+                <legend>Dados Profissionais: </legend>
+                <label>
+                    Nome da Empresa: <br>
+                    <input type="text" name="companyname">
+                </label>
+                <br>
+                <label>
+                    Cargo na Empresa: <br>
+                    <input type="text" name="companyname">
+                </label>
+                <br>
+            </fieldset>
+            <input type="submit" value="Cadastrar"/>
+        </form>
+        
+    </body>
+</html>

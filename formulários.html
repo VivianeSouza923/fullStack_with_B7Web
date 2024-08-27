@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Aula de formulários - B7Web</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="formulários.css">
+    </head>
+
+    <body>
+
+        <h2>Área de Cadastro</h2>
+        <!-- Para onde vão as informações e tipo de envio? Essas opções são opcionais-->
+        <!-- em action="coloca para onde vai as informações. pode ser um link (arquivo, né)"-->
+        <!--em method="bota o método, que poder ser GET ou POST" O GET MOSTRA O ID, POR EXEMPLO. O 
+        POST É INTERNAMENTE, N MOSTRA AS INFORMAÇÕES NA URL.-->
+        <form action="tabelas_no_css.html" method="get">
+            <input type="text"/> <!--o input é aquele campo para entrada de texto-->
+            <br>
+            <label for="0">Senha: </label>
+            <br>
+            <input type="password" id="0"/> <!-- ideal para senhas, pois criptografa-->
+            <input type="checkbox" id="1"/> <!-- marcar e desmarcar. lembra do "aceito os termos"?-->
+            <label for="1">Eu declaro que li e aceito os termos de uso</label>
+            <input type="radio" name="sexo"/> <!-- seleciona opções, aqueles círculos de opção de prova, lembra?-->
+            <input type="radio" name="sexo"/> <!-- o type é o grupo. se for grupos diferentes, todas as bolinhas serão marcadas-->
+            <input type="submit"/> <!-- ele vem por padrão com o nome "enviar". é basicamente um botão.-->
+            <input type="email"/> <!-- é ideal para email, pois necessita do @, domínio. sem eles, ele não submete-->
+            <br>
+            <!-- podemos colocar um valor pré-estabelecido no input, tipo como se fosse o hint do flutter-->
+            <input type="text" name="usuario" value="lalalal"/> <!-- o ideal é botar o nome nos inputs-->
+            <input type="submit"/>
+            <br>
+            <input type="color"/>
+            <input type="date"/>
+            <br>
+            <input type="datetime-local"/>
+            <input type="number"/>
+            <input type="range"/>
+            <input type="search"/>
+            <input type="month"/> <!-- pega o mÊs e ano-->
+            <br>
+            <input type="tel"/> <!-- aceita telefones, mas não formata-->
+            <input type="time"/> <!--só a hora-->
+            <input type="url"/> <!-- só aceita submeter com url-->
+            <input type="week"/> <!--seleciona a semana x do ano x-->
+            <br>
+            <!--ele tem o nome-->
+            <select name="order" id="" size="2" multiple> <!--transofrmando em múltipla escolha, essa lista. o 2 é quantos eu posso selecionar.-->
+                <option value="bestsellers" selected>Mais vendidos</option>
+                <option value="last">Recentes</option>
+            </select> 
+
+            <br>
+            <textarea name="descricao" id=""></textarea>
+
+            <button>Texto do próprio botão</button>
+            <br>
+
+            <!-- posso fazer o label + input assim também: -->
+             <label>
+                Nome Completo:<br>
+                <input type="text" name="nomecomp"/>
+             </label>
+             <br>
+             <label for="">
+                Descrição: <br>
+                <textarea name="descricaoo" id=""></textarea>
+             </label>
+             
+             <label>
+                Categoria: <br>
+                <select name="categoria">
+                    <option value="1">Categoria 1</option>
+                    <option value="2">Categoria 2</option>
+                    <option value="3">Categoria 3</option>
+                    <option value="4">Categoria 4</option>
+                    <option value="5">Categoria 5</option>
+                </select>
+             </label>
+        </form>
+        
+        
+    </body>
+</html>

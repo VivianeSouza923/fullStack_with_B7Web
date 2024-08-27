@@ -5,4 +5,36 @@ table {
 
 td{
     border: 1px solid darkorange;
+    padding: 20px;
 }
+
+th {
+    border: 1px solid darksalmon;
+    padding: 10px;
+    /* SE EU QUISER QUE OS NOMES DOS CABEÇALHOS NÃO SEJA EM NEGRITO, QUE É DEFAULT, EU USO
+    font-weight: normal;*/
+}
+
+table thead{
+    background-color: darkseagreen;
+}
+
+table tbody{
+    background-color: darkslateblue;
+}
+
+
+tbody tr:hover{
+    background-color: darkslategray;
+}
+
+tbody td {
+    border: 1px solid darkturquoise;
+}
+
+tbody tr:nth-child(even){ /* esse comando vai nas linhas do body (tbody, no caso, enfim) e irá
+    colorir essas linhas ALTERNADAMENTE */
+    background-color: darkviolet;
+}
+
+
