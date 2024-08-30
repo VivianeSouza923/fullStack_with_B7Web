@@ -1,0 +1,58 @@
+/* seleciona o elemento HTML com a classe container*/
+.container{
+    /*essa propriedade fundamental define que o elemento .container deve ser tratado com um contêiner FLEXBOX. 
+    Isso significa que todos os elementos filhos diretos (as divs de dentro)desse contêiner serão organizados e alinhados como 
+    itens flexíveis*/
+    display: flex;
+    /* permite que os itens flexíveis quebrem em novas linhas*/
+    flex-wrap: wrap;
+}
+/* seleciona o elemento HTML com a classe coluna-fixa*/
+.coluna-fixa{
+    /* define a largura da coluna fixa. Ela não se ajusta automaticamente ao espaço disponível.*/
+    width: 200px;
+    /* define a cor de fundo da coluna*/
+    background-color: dimgrey;
+    /* define um espaçamento interno de 20px em todos os lados (top, left, right bottom) da coluna. Esse espaçamento cria uma área
+    livre entre o conteúdo da coluna e a borda da coluna.*/
+    padding: 20px;
+}
+/* Seleciona o elemento HTML com a classe coluna-flexivel*/
+.coluna-flexivel{
+    /* ao definir flex-grow como 1, eu garanto que as colunas flexíveis se expandirão igualmente para ocupar o espaço restante den-
+    tro do contêiner, após a coluna fixa ocupar seus pixels*/
+    flex-grow: 1;
+    /* já foi bem explicado*/
+    background-color: dodgerblue;
+    /*também já foi bem explicado*/
+    padding: 20px;
+}
+/* para telas maiores que 768px (desktop)*/
+@media (min-width: 618px){
+    .container{
+        /*define as colunas lado a lado*/
+        flex-direction: row;
+    }
+
+    .coluna-fixa{
+        width: 200px; /* mantém a largura fixa da coluna*/
+    }
+
+    .coluna-flexivel{
+        flex-grow: 1; /* permite que as colunas flexíveis se expandam igualmente*/
+    }
+}
+/* para telas menores que 768px (mobile)*/
+@media (max-width: 618px){
+    .container{
+        flex-direction: column; /* define as colunas em pilhas*/
+    }
+
+    .coluna-fixa{
+        width: 100%; /* faz a coluna fixa ocupar toda a largura da tela*/
+    }
+
+    .coluna-flexivel{
+        width: 100%; /* faz as colunas flexíveis ocupar toda a largura da tela*/
+    }
+}
