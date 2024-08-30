@@ -1,8 +1,55 @@
+<!-- essa linha declara que meu documento é html. é importante para que o navegador interprete cor-
+ retamente meu código-->
 <!DOCTYPE html>
 
+<!-- essa tag abre a estrutura básica do html. tudo que estiver dentro dela é considerado parte do
+ conteúdo da página-->
 <html>
+    <!-- essa tag define a seção de cabeçalho do documento. dentro dela, geralmente colocamos informações que não são exibidas
+    pelo navegador, mas são importantes para o funcionamento da página.-->
     <head>
+        <!--define o título da página. Esse título aparece na aba do navegador e também em marcadores de favoritos-->
         <title>Utilizando Flexbox</title>
+        <!-- define o conjunto de caracteres que a página usa. UTF-8 é o padrão atual, que permite a exibição de caracteres de 
+         diversos idiomas-->
+        <meta charset="UTF-8">
+        <!-- faz referência a um arquivo de estilo CSS externo-->
+        <link rel="stylesheet" href="lista_exercicios_intermediario_1_flexbox.css">
         
     </head>
+    <!-- essa tag define o corpo do documento, onde fica o conteúdo visível da página web-->
+    <body>
+        <!-- define um container (um elemento divisor) que abriga as três colunas. É dentro do container que o Flexbox vai organi-
+         zar as colunas-->
+        <div class="container">
+            <!-- define a primeira coluna, que será fixa.-->
+            <div class="coluna-fixa">
+                <!-- define um cabeçalho de nível 2 que exibe o texto "Coluna fixa"-->
+                <h2>Coluna fixa</h2>
+                <!-- define um parágrafo de texto. as 2 próximas linhas é a mesma coisa-->
+                <p>poste</p>
+                <p>casa</p>
+                <p>árvore</p>
+    
+            </div>
+            <!-- define a segunda coluna, que tem largura flexível, ajustando-se ao espaço disponível.-->
+            <div class="coluna-flexivel">
+                <!--igual à tag h2 da div passada-->
+                <h2>Coluna Flexível</h2>
+                <!-- tag p é para fazer parágrafos. Já foi visto isso-->
+                <p>Bola</p>
+                <p>Ser humano</p>
+                <p>Barco</p>
+            </div>
+            <!-- define a terceira coluna que também terá largura flexível-->
+            <div class="coluna-flexivel">
+                <!-- enfim, cabeçalho de nível 2 (segundo maior) de novo-->
+                <h2>Coluna Flexível 2</h2>
+                <!-- parágrafos de novo-->
+                <p>Anel</p>
+                <p>Livro</p>
+                <p>Caderno</p>
+            </div>
+        </div>
+    </body>
 </html>
