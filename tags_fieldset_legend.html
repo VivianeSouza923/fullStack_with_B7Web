@@ -9,7 +9,7 @@
 
     <body>
 
-        <form method="post" action="bla.php">
+        <form method="post" action="bla.php" enctype="multipart/form-data">
            <fieldset>
             <legend>Dados Pessoais: </legend>
             <label>
@@ -19,7 +19,12 @@
             <br>
             <label>
                 Sobrenome: <br>
-                <input type="text" name="lastname">
+                <input type="text" name="lastname"/>
+            </label>
+            <br>
+            <label>
+                Foto: <br>
+                <input type="file" name="photo" accept="image/*"/>
             </label>
             <br>
             <label>
@@ -29,9 +34,13 @@
             <br>
             <label>
                 Data de Nascimento: <br>
-                <input type="date" name="birthdate" min="2024-08-27"/>
+                <input type="date" name="birthdate" max="2024-08-27"/>
             </label>
             <br>
+            <LAbel>
+                E-mail: <br>
+                <input type="email" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de e-mail"/>
+            </LAbel>
            </fieldset>
             <fieldset>
                 <legend>Dados Profissionais: </legend>
