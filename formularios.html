@@ -1,0 +1,50 @@
+<!--
+Abra o arquivo "formularios.html" em seu navegador.
+
+Desafio:
+
+Adicione outros campos de entrada, como senha, caixa de seleção, botão de rádio e área de texto.
+
+Defina os atributos required e placeholder para os campos de entrada.-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulários</title>
+</head>
+<body>
+  <h2>Formulário</h2>
+  <form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" >
+    <input type="submit" value="Enviar">
+    <br>
+    <label for="caixaselecao">Caixa de Seleção:</label>
+    <br>
+    <select name="caixaselecao" id="caixaselecao" >
+        <option value="america">América do Sul</option>
+        <option value="asia">Asia</option>
+        <option value="europa">Europa</option>
+    </select>
+    <br>
+    <label for="masculino">Masculino:</label>
+    <br>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <br>
+    <label for="feminino">Feminino:</label>
+    <br>
+    <input type="radio" id="feminino" name="genero" value="feminino">
+    <br>
+    <label for="descricao">Descrição: </label>
+    <br>
+    <textarea name="descricao" id="descricao" rows="5" cols="40" required placeholder="Descreva-se"></textarea>
+
+    
+  </form>
+</body>
+</html>
